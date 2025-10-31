@@ -7,7 +7,7 @@ It analyzes every site you visit — from **trustworthiness** and **cookie conse
 
 ## 🚀 Problem Statement
 
-"Modern websites often hide security risks behind complex layers — misleading cookie banners, hidden trackers, spoofed domains, or walls of unreadable policies.  
+Modern websites often hide security risks behind complex layers misleading cookie banners, hidden trackers, spoofed domains, or walls of unreadable policies.  
 Most users **don’t know what data they’re really sharing**, or whether a website can be trusted.
 
 AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain checks, consent scanning, tracker heuristics, link redirects) with Chrome’s on‑device AI summarizer to turn long, dense pages and consent text into short, privacy‑preserving insights — instantly and without sending content to any server.
