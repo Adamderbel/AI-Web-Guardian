@@ -112,12 +112,30 @@ AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain chec
 
 ## ⚙️ Development Commands
 
+### Prerequisites
+- **Git** installed on your system
+- **Node.js** (version 16 or higher recommended)
+- **Chrome 138+** browser
+
 ### Installation & Setup
+
+**1. Clone the Repository**
+```bash
+git clone https://github.com/Adamderbel/AI-Web-Guardian.git
+cd AI-Web-Guardian
+```
+
+**2. Install Dependencies**
 ```bash
 npm install
+```
+
+**3. Development & Build Commands**
+```bash
 npm run dev      # Local development with auto-reload
 npm run build    # Production build to dist/
 ```
+
 **Chrome Installation:**
 1. Go to `chrome://extensions`
 2. Enable "Developer mode"
