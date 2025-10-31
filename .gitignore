@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+.tmp/
+.temp/
+.tmp-cache/
+.cache/
+.vite/
+coverage/
+.nyc_output/
+.turbo/
+.parcel-cache/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Misc
+*.local
+*.swp
+*.swo
+*.orig
+*.zip
+
+# TypeScript
+*.tsbuildinfo
+
+# Generated lockfiles backup
+package-lock.json.*
+yarn.lock.*
+pnpm-lock.yaml.*
+
+# Test artifacts
+junit.xml
+
+

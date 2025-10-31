@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "AI Web Guardian",
+  "description": "Analyze visited sites across Trust, Consent, Threats, Links, and On-Demand summaries using Chrome's on-device AI.",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "AI Web Guardian",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "webRequest",
+    "sidePanel",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

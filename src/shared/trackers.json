@@ -1,0 +1,7 @@
+[
+  { "domain": "google-analytics.com", "type": "analytics" },
+  { "domain": "googletagmanager.com", "type": "analytics" },
+  { "domain": "doubleclick.net", "type": "ads" },
+  { "domain": "facebook.net", "type": "social" },
+  { "domain": "hotjar.com", "type": "analytics" }
+]
