@@ -60,19 +60,6 @@ AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain chec
 
 ---
 
-"## 🧱 Project Structure
-
-| File / Folder | Purpose |
-|----------------|----------|
-| `manifest.json` | MV3 config (action opens side panel; restricted permissions) |
-| `src/background/index.ts` | Background service: risk score, domain/cert fetch, redirect tracking |
-| `src/content/index.ts` | Content script: cookies/consent detection, tracker scan, link hover preview |
-| `src/panel/` | Side panel React UI (Trust, Cookies, Threats, Summaries) |
-| `src/shared/` | Shared AI helpers, message types, and tracker lists |
-| `vite.config.ts` | Build configuration for all components |" (write this better too)
-
----
-
 ## 🧠 How It Works (Feature Flow)
 
 1. **Visit any website**
@@ -125,43 +112,63 @@ AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain chec
 
 ## ⚙️ Development Commands
 
+### Installation & Setup
 ```bash
 npm install
-npm run dev   # for local builds (reload after build)
-npm run build # production build to dist/
+npm run dev      # Local development with auto-reload
+npm run build    # Production build to dist/
+```
+**Chrome Installation:**
+1. Go to `chrome://extensions`
+2. Enable "Developer mode"
+3. Click "Load unpacked"
+4. Select the `dist/` folder
 
-Then open Chrome → chrome://extensions → Load unpacked → select dist/.
-🧰 Optional Configuration
-Setting	Description
-useMockData	Fill trust fields with mock values for demos (default false)
-whoisEndpoint	Custom RDAP/WHOIS endpoint (default builtin:rdap)
-certEndpoint	Custom crt.sh endpoint (default builtin:crtsh)
-VITE_SAFE_BROWSING_API_KEY	Optional Safe Browsing lookup (not enabled by default)
-🧑‍⚖️ Privacy & Security
+## ⚙️ Configuration Options
 
-- On‑device AI (Summarizer, Language Detector) — no content sent to servers.
-- External lookups (RDAP / crt.sh) are anonymous and cached for 24h.
-- Optional Safe Browsing checks (if you wire them) are off by default.
+| Setting | Description | Default |
+|---------|-------------|---------|
+| `useMockData` | Fill trust fields with mock values for demonstrations | `false` |
+| `whoisEndpoint` | Custom RDAP/WHOIS endpoint | `builtin:rdap` |
+| `certEndpoint` | Custom crt.sh certificate endpoint | `builtin:crtsh` |
+| `VITE_SAFE_BROWSING_API_KEY` | Optional Google Safe Browsing API key | Not enabled |
 
-🎯 Why It Stands Out
+## 🔒 Privacy & Security
 
-- Local, privacy‑preserving AI — intelligence runs inside Chrome.
-- Covers key risks: authenticity, cookies/consent, hidden threats, and redirects.
-- Accessible UI — clear status badge, lists, and human‑readable summaries.
-- Hackathon‑ready — fast to install from `dist.zip`, easy to verify.
+### Data Handling
+- **On-device AI Processing**: All AI features (Summarizer, Language Detector) run locally - no data sent to external servers
+- **External Lookups**: RDAP and crt.sh queries are anonymous with 24-hour caching
+- **Safe Browsing**: Optional feature disabled by default
 
-📋 Chrome Version and Flags
+### Compliance
+- Minimal permissions required
+- No remote code execution capabilities
+- No personal data collection or telemetry
+- External lookups use public endpoints only
 
-- Use **Chrome 138+** (or newer Canary/Dev with on‑device AI enabled).
-- If the AI APIs are unavailable, enable related flags at `chrome://flags` (per official docs) and ensure **no enterprise policy** disables on‑device models; keep Chrome updated so required components/models are present.
-- Reference: https://developer.chrome.com/docs/ai/
+## 🎯 Key Features & Differentiators
 
-✅ Policy Compliance Notes
+- **Local AI Intelligence**: Privacy-preserving analysis running entirely within Chrome
+- **Comprehensive Risk Coverage**: Authenticity verification, cookie/consent analysis, threat detection, and redirect tracing
+- **Accessible Interface**: Clear status badges, organized lists, and human-readable summaries
+- **Hackathon-Ready**: Quick installation from `dist.zip` with easy verification
 
-- Minimal permissions (no remote code execution).
-- No personal data collection or telemetry beyond what is needed for feature operation.
-- On‑device AI only; optional external lookups are to public endpoints (RDAP/crt.sh).
+## 📋 System Requirements
 
-📜 License
+### Chrome Version
+- **Chrome 138+** required
 
-MIT License. See LICENSE.
+### AI Feature Setup
+If AI APIs are unavailable:
+1. Enable relevant flags at `chrome://flags` (refer to official Chrome AI documentation)
+2. Ensure no enterprise policies disable on-device models
+3. Keep Chrome updated for required components and models
+
+**Reference**: [Chrome AI Developer Documentation](https://developer.chrome.com/docs/ai/)
+
+## 📜 License
+
+MIT License - See LICENSE file for complete terms.
+
+---
+
