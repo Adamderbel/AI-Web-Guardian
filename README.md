@@ -1,7 +1,7 @@
 # 🧠 AI Web Guardian
 
 **AI Web Guardian** is a Chrome MV3 extension (built with **React + TypeScript + Vite**) that protects users in real time while browsing.  
-It analyzes every site you visit — from **trustworthiness** and **cookie consent traps** to **hidden trackers** and **unsafe links** — and uses **Chrome’s on-device AI APIs** to provide clear, human-readable insights and summaries.
+It analyzes every site you visit  from **trustworthiness** and **cookie consent traps** to **hidden trackers** and **unsafe links** and uses **Chrome’s on-device AI APIs** to provide clear, human-readable insights and summaries.
 
 ---
 
@@ -10,7 +10,7 @@ It analyzes every site you visit — from **trustworthiness** and **cookie conse
 Modern websites often hide security risks behind complex layers misleading cookie banners, hidden trackers, spoofed domains, or walls of unreadable policies.  
 Most users **don’t know what data they’re really sharing**, or whether a website can be trusted.
 
-AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain checks, consent scanning, tracker heuristics, link redirects) with Chrome’s on‑device AI summarizer to turn long, dense pages and consent text into short, privacy‑preserving insights — instantly and without sending content to any server.
+AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain checks, consent scanning, tracker heuristics, link redirects) with Chrome’s on‑device AI summarizer to turn long, dense pages and consent text into short, privacy‑preserving insights  instantly and without sending content to any server.
 
 ---
 
@@ -42,7 +42,7 @@ AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain chec
   - **Consent/policy** text into plain English.
   - **Threats** text into plain English.
 - Uses **Language Detection API** to identify the text’s language.
-- Runs locally (no network calls) — the summarized text stays in the browser.
+- Runs locally (no network calls) the summarized text stays in the browser.
 
 ---
 
