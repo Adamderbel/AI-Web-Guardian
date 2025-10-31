@@ -94,7 +94,7 @@ AI Web Guardian combines lightweight, on‑page analysis (HTTPS/cert/domain chec
 ## 🧪 Testing Guide (for Judges)
 
 1. **Install from ZIP**
-   - Download the latest **[dist.zip](./releases/dist.zip)** from the **`releases`** folder.
+   - Download the latest **[dist.zip](./releases)** from the **`releases`** folder.
    - Unzip the file, then go to **`chrome://extensions`** → enable **Developer mode** → click **Load unpacked** → and select the extracted **`dist`** folder.
 2. **Open sites to test:**
    - **Wikipedia.org** → try summarizing an article (tests summarizer + language detection)
