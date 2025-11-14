@@ -3,6 +3,8 @@
 **AI Web Guardian** is a Chrome MV3 extension (built with **React + TypeScript + Vite**) that protects users in real time while browsing.  
 It analyzes every site you visit  from **trustworthiness** and **cookie consent traps** to **hidden trackers** and **unsafe links** and uses **Chrome’s on-device AI APIs** to provide clear, human-readable insights and summaries.
 
+**Check out the hackathon page:** [AI Web Guardian on Devpost](https://devpost.com/software/ai-web-guardian?ref_content=user-portfolio&ref_feature=in_progress)
+
 ---
 
 ## 🚀 Problem Statement
